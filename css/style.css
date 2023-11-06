@@ -793,6 +793,7 @@ h2 span {
 }
 
 .offer_section .price_wrapper {
+	margin-top: -8px;
 	padding: 30px 0;
 	background-color: #1b5a9b;
 	/* background: #222 url(../images/offer_top__price_bg.jpg) center top no-repeat; */
@@ -1811,10 +1812,10 @@ h2 span {
 }
 
 .offer_section.offer_top {
-	padding: 15px 0 0;
-	background: #1b5a9b url(../images/offer_top_bg2.jpg)
-		/*tpa=http://jarko.v-stile.net.ua/images/offer_top_bg.jpg*/
-		center top no-repeat;
+	/* padding: 15px 0 0; */
+	/* height: 700px;
+	background: #1b5a9b url(../images/offer_top_bg3.jpg) 50% 50%/contain no-repeat; */
+
 }
 
 
@@ -2104,9 +2105,7 @@ h2 span {
 }
 
 .offer_section.offer_bottom {
-	background: #1b5a9b url(../images/footerbg2.jpg)
-		/*tpa=http://jarko.v-stile.net.ua/images/offer_bottom_bg.jpg*/
-		center top no-repeat;
+	/* background: #1b5a9b url(../images/footerbg2.jpg) center top no-repeat; */
 }
 
 .free {
