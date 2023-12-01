@@ -10,7 +10,7 @@
     <link href="./css/css.css" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/fonts.css" type="text/css">
+    <!-- <link rel="stylesheet" href="./css/fonts.css" type="text/css"> -->
 
 </head>
 
@@ -185,11 +185,11 @@
                 </div>
             </div>
 
-            <form id="telegram-form" class="order_form orderformcdn">
+            <form id="telegram-form">
 
                 <input type="text" class="field" name="name" placeholder="Введіть ваше ім'я" required/>
 
-                <input type="tel" class="field" name="phone" placeholder="Ваш номер телефону" required/>
+                <input type="tel" class="field" name="phone" id="phone" placeholder="Ваш номер телефону" required/>
 
                 <button type="submit" class="button">Відправити замовлення</button>
 
@@ -210,6 +210,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/phoneMask.js" defer></script>
     <script src="./js/send-form.js" defer></script>
 
 </body>

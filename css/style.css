@@ -1075,14 +1075,7 @@ section .image {
 	color: #777;
 }
 
-.offer_section .field[name='name'] {
-	background: #ebebeb url(../img/offer__name_icon.png) 22px center no-repeat;
-}
 
-.offer_section .field[name='phone'] {
-	margin: 0 auto 35px;
-	background: #ebebeb url(../img/offer__phone_icon.png) 20px center no-repeat;
-}
 .voice_count > p{
     display: inline-block;
 }
@@ -2067,15 +2060,6 @@ b > p{
 	right: -16px;
 }
 /* opinion 2 */
-
-.opinion2_section {
-	padding: 30px;
-	background: #222 url(style.css) center top no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
 .opinion2_section h2.title {
 	color: #fff;
