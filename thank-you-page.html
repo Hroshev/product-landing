@@ -8,112 +8,106 @@
     <title>Дякуємо за вашу покупку</title>
 </head>
 
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+    body {
+        min-width: 320px;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .thank-you {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+    }
+
+    .thank-you__window {
+        margin: 0 auto;
+        padding: 75px 16px;
+        max-width: 340px;
+        border-radius: 10px;
+        background: linear-gradient(123deg, #FFEFBA 0%, #FFF2C7 100%);
+        box-shadow: 1px 1px 5px 0px rgba(173, 173, 173, 0.7);
+    }
+
+    .thank-you__window h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .thank-you__window h1 {
+        margin: 30px 0px;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    .thank-you__window p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .thank-you__window a {
+        display: inline-block;
+        padding: 14px 4px;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 8px;
+        color: #000000;
+        background-color: #f2681b;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        transition: opacity .2s ease-in;
+    }
+
+    .thank-you__window a:hover {
+        opacity: 0.8;
+    }
+</style>
+
 <body>
 
-    <div class="thank__container">
-
-        <svg width="200" height="200" x="0" y="0" viewBox="0 0 512 512">
-            <g>
-                <path
-                    d="m472.183 180.394-200-117.242a32 32 0 0 0-32.366 0l-200 117.242A32 32 0 0 0 24 208v256a32 32 0 0 0 32 32h400a32 32 0 0 0 32-32V208a32 32 0 0 0-15.817-27.606Z"
-                    fill="#e09f2c" data-original="#e09f2c"></path>
-                <rect width="336" height="416" x="88" y="16" rx="32" fill="#e9eef2" data-original="#e9eef2"></rect>
-                <path
-                    d="M488 207.93 272.183 334.443a32 32 0 0 1-32.366 0L24 207.93v256a32 32 0 0 0 32 32h400a32 32 0 0 0 32-32Z"
-                    fill="#ffb632" data-original="#ffb632"></path>
-                <path
-                    d="M152 208h208a8 8 0 0 0 0-16H152a8 8 0 0 0 0 16ZM152 248h208a8 8 0 0 0 0-16H152a8 8 0 0 0 0 16ZM288 272h-64a8 8 0 0 0 0 16h64a8 8 0 0 0 0-16Z"
-                    fill="#000000" opacity="1" data-original="#000000"></path>
-                <path
-                    d="M56 504h400a40.045 40.045 0 0 0 40-40V208a40.149 40.149 0 0 0-19.771-34.508L432 147.565V48a40.045 40.045 0 0 0-40-40H120a40.045 40.045 0 0 0-40 40v99.565l-44.229 25.927A40.149 40.149 0 0 0 16 208v256a40.045 40.045 0 0 0 40 40Zm424-40a24.028 24.028 0 0 1-24 24H56a24.028 24.028 0 0 1-24-24V221.963l203.771 119.452a40.037 40.037 0 0 0 40.458 0L480 221.963Zm-11.863-276.7a24.1 24.1 0 0 1 11.454 16.361L432 231.554v-65.443ZM120 24h272a24.028 24.028 0 0 1 24 24v192.933l-147.863 86.679a24.026 24.026 0 0 1-24.274 0L96 240.933V48a24.028 24.028 0 0 1 24-24ZM43.863 187.3 80 166.111v65.443l-47.591-27.9A24.1 24.1 0 0 1 43.863 187.3Z"
-                    fill="#000000" opacity="1" data-original="#000000"></path>
-                <path
-                    d="M152 88h208a8 8 0 0 0 0-16H152a8 8 0 0 0 0 16ZM152 128h208a8 8 0 0 0 0-16H152a8 8 0 0 0 0 16ZM152 168h208a8 8 0 0 0 0-16H152a8 8 0 0 0 0 16Z"
-                    fill="#000000" opacity="1" data-original="#000000"></path>
-            </g>
-        </svg>
-
-        <h1>Дякуємо, вашу покупку успішно оформлено</h1>
-        <p>Ми зв'яжемося з вами найближчим часом</p>
-        <a href="/">Головна сторінка</a>
-
-    </div>
-
+    <main>
+        <section class="thank-you">
+            <div class="thank-you__container">
+                <div class="thank-you__window">
+                    <h3>😍 Відмінний вибір!</h3>
+                    <h1>❤️ Дякуємо </br> за замовлення!</h1>
+                    <p>Наш менеджер зателефонує вам для уточнення деталей замовлення</p>
+                    <a href="/">Головна сторінка</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script>
         setTimeout(function () {
             window.location.href = '/';
-        }, 7000);
+        }, 9000);
     </script>
-
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            border: 0;
-        }
-
-        body {
-            min-width: 320px;
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-        }
-
-        *,
-        *:before,
-        *:after {
-            -moz-box-sizing: border-box;
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-
-        .thank__container {
-            background-color: #FFFFFF;
-
-            margin: 0 auto;
-            padding: 0 15px;
-            width: 100%;
-            max-width: 460px;
-            height: 100vh;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .thank__container h1 {
-            margin: 34px 0px 16px 0px;
-            max-width: 376px;
-            font-size: 26px;
-            color: #000000;
-        }
-
-        .thank__container p {
-            margin-bottom: 24px;
-            font-size: 18px;
-            color: #333333;
-        }
-
-        .thank__container a {
-            display: inline-block;
-            padding: 12px 24px;
-            width: 100%;
-            max-width: 390px;
-            font-size: 18px;
-            border-radius: 6px;
-            color: #FFFFFF;
-            background-color: rgb(37, 99, 154);
-            cursor: pointer;
-            text-decoration: none;
-            transition: opacity .2s ease-in;
-        }
-
-        .thank__container a:hover {
-            opacity: 0.8;
-        }
-    </style>
 
 </body>
 

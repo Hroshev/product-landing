@@ -1,5 +1,4 @@
-$('.telegram-form').on('submit', function (event) {
-
+$('#telegram-form').on('submit', function (event) {
     event.stopPropagation();
     event.preventDefault();
 
@@ -7,13 +6,31 @@ $('.telegram-form').on('submit', function (event) {
         submit = $('.submit', form),
         data = new FormData();
 
-    $('.submit', form).val('Отправка...');
-    $('input, textarea', form).attr('disabled','');
+    $('.submit', form).val('Відправлення...');
+    $('input, textarea', form).attr('disabled', '');
 
-    data.append('Ім`я', $('[name="name"]', form).val());
-    data.append('Телефон', $('[name="phone"]', form).val());
-    data.append('Кількість товару', $('[name="sale"]', form).val());
-    data.append('Посилання на товар', window.location.href);
+    let nameValue = $('[name="name"]', form).val();
+    let phoneValue = $('[name="phone"]', form).val();
+    let emailValue = $('[name="email"]', form).val();
+    let selectValue = $('[name="select"]', form).val();
+
+    if (nameValue) {
+        data.append('Ім`я', nameValue);
+    }
+
+    if (phoneValue) {
+        data.append('Телефон', phoneValue);
+    }
+
+    if (emailValue) {
+        data.append('Email', emailValue);
+    }
+
+    if (selectValue) {
+        data.append('Пропозиція', selectValue);
+    }
+
+    data.append('Товар', window.location.href);
 
     $.ajax({
         url: 'telegram.php',
@@ -23,11 +40,11 @@ $('.telegram-form').on('submit', function (event) {
         dataType: 'json',
         processData: false,
         contentType: false,
-        xhr: function() {
+        xhr: function () {
             let myXhr = $.ajaxSettings.xhr();
 
             if (myXhr.upload) {
-                myXhr.upload.addEventListener('progress', function(e) {
+                myXhr.upload.addEventListener('progress', function (e) {
                     if (e.lengthComputable) {
                         let percentage = (e.loaded / e.total) * 100;
                         percentage = percentage.toFixed(0);
@@ -38,11 +55,11 @@ $('.telegram-form').on('submit', function (event) {
 
             return myXhr;
         },
-        error: function(jqXHR, textStatus) {
+        error: function (jqXHR, textStatus) {
             // Handle error
         },
-        complete: function() {
-            window.location.href = 'thank-you-page.html';
+        complete: function () {
+            window.location.href = '/thank-you-page.html';
             form.reset();
         }
     });
