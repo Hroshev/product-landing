@@ -67,7 +67,7 @@
                 <div class="price">
                     <div class="old">
                         <p>Звичайна ціна:</p>
-                        <div class="val"><span>1199</span><i>грн</i></div>
+                        <div class="val"><span>1299</span><i>грн</i></div>
                     </div>
                     <div class="new">
                         <p>Ціна сьогодні:</p>
@@ -241,8 +241,8 @@
         <div class="number-discount">
             <h3 class="block-title">ЗАОЩАДЖУЙ ПРЯМО ЗАРАЗ!</h3>
             <ol role="list" class="discount-list">
-                <li>2 шт = <strong>1148</strong> грн ( знижка -50грн )</li>
-                <li>3 шт = <strong>1697</strong> грн ( знижка -100грн )</li>
+                <li>2 шт = <strong>1348</strong> грн ( знижка -50грн )</li>
+                <li>3 шт = <strong>1997</strong> грн ( знижка -100грн )</li>
             </ol>
         </div>
 
@@ -269,7 +269,7 @@
                 <div class="price">
                     <div class="old">
                         <p>Звичайна ціна:</p>
-                        <div class="val"><span>1199</span><i>грн</i></div>
+                        <div class="val"><span>1299</span><i>грн</i></div>
                     </div>
                     <div class="new">
                         <p>Ціна сьогодні:</p>
@@ -295,11 +295,11 @@
 
                 <form class="m1-form" id="telegram-form">
 
-                    <select name="select" class="field" required="">
-                        <option value="Не обрано" disabled="" selected="" hidden="">▼ Обрати кiлькiсть (шт.)</option>
+                    <select name="select" class="field" required>
+                        <option value="Не обрано" disabled selected hidden>▼ Обрати кiлькiсть (шт.)</option>
                         <option value="1 шт = 699 грн">1 шт = 699 грн</option>
-                        <option value="2 шт = 1148 грн ( знижка -50грн )">2 шт = 1148 грн ( знижка -50грн )</option>
-                        <option value="3 шт = 1697 грн ( знижка -100грн )">3 шт = 1697 грн ( знижка -100грн )</option>
+                        <option value="2 шт = 1348 грн">2 шт = 1348 грн ( знижка -50грн )</option>
+                        <option value="3 шт = 1997 грн">3 шт = 1997 грн ( знижка -100грн )</option>
                     </select>
 
                     <input class="field" type="text" name="name" placeholder="Введіть Ваше ім'я" required="">
@@ -330,80 +330,11 @@
 
     </div>
 
-
-    <!-- Swipper slider -->
-    <script>
-        $(window).on("load", function () {
-
-            var slider = new Swiper('.gallery-slider.one', {
-                slidesPerView: 1,
-                centeredSlides: true,
-                loop: true,
-                loopedSlides: 6,
-                navigation: {
-                    nextEl: '.swiper-button-next.one',
-                    prevEl: '.swiper-button-prev.one',
-                },
-            });
-
-
-            var thumbs = new Swiper('.gallery-thumbs.one', {
-                slidesPerView: 'auto',
-                spaceBetween: 10,
-                centeredSlides: true,
-                loop: true,
-                slideToClickedSlide: true,
-            });
-
-            slider.controller.control = thumbs;
-            thumbs.controller.control = slider;
-            var slider2 = new Swiper('.gallery-slider.two', {
-                slidesPerView: 1,
-                centeredSlides: true,
-                loop: true,
-                loopedSlides: 6,
-                navigation: {
-                    nextEl: '.swiper-button-next.two',
-                    prevEl: '.swiper-button-prev.two',
-                },
-            });
-
-
-            var thumbs2 = new Swiper('.gallery-thumbs.two', {
-                slidesPerView: 'auto',
-                spaceBetween: 10,
-                centeredSlides: true,
-                loop: true,
-                slideToClickedSlide: true,
-            });
-
-            slider2.controller.control = thumbs2;
-            thumbs2.controller.control = slider2;
-        });
-    </script>
-
-    <!-- Запрет на открытие инструментов разработчика -->
-    <script type="text/javascript">
-        document.addEventListener('keydown', (event) => {
-        const isCtrlShift = event.ctrlKey || event.metaKey && event.shiftKey;
-
-        if (isCtrlShift && ['I', 'J', 'C'].includes(event.key)) {
-            event.preventDefault();
-        }
-
-        if ((isCtrlShift || event.ctrlKey || event.metaKey) && event.key === 'S') {
-            event.preventDefault();
-        }
-
-        if (event.key === 'F12' && event.code === 'F12') {
-            event.preventDefault();
-        }
-        });
-    </script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/send-form.js" defer></script>
+    <script src="./js/close-dev.js" defer></script>
 
+    <script src="./js/swiper.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/maskedinput.js"></script>
     <script async="" src="./js/swiper-bundle.min.js"></script>
