@@ -1,9 +1,6 @@
 <?php
-// Токен телеграм бота
 $tg_bot_token = "";
-// ID Чата
 $chat_id = "";
-
 $text = '';
 
 foreach ($_POST as $key => $val) {

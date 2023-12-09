@@ -2,216 +2,415 @@
 <html lang="uk">
 
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Фен-щітка 4 в 1</title>
-    <!-- Fonts -->
-    <link href="./css/css.css" rel="stylesheet">
-    <!-- Styles -->
-    <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <!-- <link rel="stylesheet" href="./css/fonts.css" type="text/css"> -->
+    <meta name="viewport" content="width=480">
+    <title>Стайлер для волосся</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/push.css" type="text/css">
+    <link rel="stylesheet" href="css/ProximaStara.css" type="text/css">
+    <link rel="stylesheet" href="css/Bratello.css" type="text/css">
+    <link rel="stylesheet" href="css/fontss.css" type="text/css">
+    <link rel="stylesheet" href="css/options.css" type="text/css">
+    <link rel="stylesheet" href="css/nastyle.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" type="text/css">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
 
 </head>
 
 <body>
-    <div class="main_wrapper">
-        <header class="offer_section offer3">
-            <div class="main_title">
-                <h1>ФЕН-ЩІТКА 4 в 1</h1>
-                <p>найкращий помічник</p>
-            </div>
-            <div class="info_block">
-                <img src="./images/styler-1.jpg">
-            </div>
-            <div class="price_block">
-                <div class="price_item old">
-                    <div class="text">
-                        <p>Стара ціна:</p>
+
+    <!-- Swipper slider -->
+    <style>
+        :root {
+            --swiper-theme-color: #e89e2c;
+        }
+    </style>
+
+    <script src="js/jquery.min.js"></script>
+    <script>(function ($) {
+            $(function () {
+                $('.menu__icon').on('click', function () {
+                    $(this).closest('.menu').toggleClass('menu_state_open');
+                });
+            });
+        })(jQuery);
+    </script>
+    <!-- END Swipper slider -->
+
+
+    <div class="wrap">
+        <style>
+            .colortext {
+                color: white;
+            }
+        </style>
+        <div
+            style="height: 100%; background-size: 100% 100%;    color: #3c4152;    text-align: center;    font-size: 16px; padding-top: 2px; font-weight: 900;">
+            <span style="font-family: 'Proxima Nova', Arial, Helvetica, sans-serif; letter-spacing: 0px;">НА ДРУГИЙ
+                СТАЙЛЕР ЗНИЖКА - 50 ГРН</span>
+        </div>
+        <section class="offer">
+            <div class="gallery">
+                <div class="swiper-container gallery-slider one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/im1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im3.jpg" alt=""></div>
                     </div>
-                    <div class="value"><span class="price_land_s2">
-                            <p style="font-size: 28px;">1799</p>
-                        </span> <span style="font-size: 28px;" class="price_land_curr">грн.</span></div>
+                    <div class="swiper-button-prev one"></div>
+                    <div class="swiper-button-next one"></div>
                 </div>
-                <div class="price_item new">
-                    <div class="text">
+                <br>
+                <div class="price">
+                    <div class="old">
+                        <p>Звичайна ціна:</p>
+                        <div class="val"><span>1199</span><i>грн</i></div>
+                    </div>
+                    <div class="new">
                         <p>Ціна сьогодні:</p>
+                        <div class="val"><span>699</span><i>грн</i></div>
                     </div>
-                    <div class="value"><span style="font-size: 28px;" class="price_land_s1">1079</span> <span style="font-size: 28px;" class="price_land_curr">грн.</span>
+                </div>
+                <div class="swiper-container gallery-thumbs one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/im1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im3.jpg" alt=""></div>
                     </div>
                 </div>
             </div>
-            <a href="#telegram-form" class="button">
-                <p>ЗАМОВИТИ ЗІ ЗНИЖКОЮ</p><span></span>
-            </a>
-        </header>
-        <section class="description_section">
-            <img style="width: 100%;" src="./images/styler-2.jpg">
-            <h2>Опис</h2>
-            <p style="font-size: 18px;">Стайлер професійний повітряний для укладання волосся 4в1 VGR V-493 Зелений Фен-щітка Мультистайлер 1000 Вт</p>
-            <p style="font-size: 18px;">Дорогий клієнт! Раді привітувати тебе в нашому інтернет-магазині "slapstar". Кожен товар із нашого асортименту перед відправленням до клієнта проходить перевірку на наявність дефектів і якісно пакується. Тому, роблячи замовлення на цей товар у нас, будь впевнений, що товар прийде цілим і перевіреним.</p>
-        </section>
 
-        <section class="description_section">
-            <h2>Особливості</h2>
-            <p style="font-size: 18px;">Безліч стилів: С VGR V-493 ви можете створювати об'єм, випрямляти, завивати та укладати волосся в будь-якому бажаному стилі.</p>
-            <p style="font-size: 18px;">Потужність 1000 Вт: Професійний рівень потужності для швидкого й ідеального укладання.</p>
-            <p style="font-size: 18px;">Регульована температура: Виберіть потрібну температуру для вашого типу волосся, гарантуючи безпеку та надійність.</p>
-            <p style="font-size: 18px;">Простота та зручність: Ергономічний дизайн і обертовий шнур забезпечують максимальну зручність під час використання.</p>
-            <p style="font-size: 18px;">Професійна якість: VGR V-493 — це стайлер, на який можна покладатися, як на найкращого друга.</p>
-        </section>
+            <ul class="bullet">
+                <li>
+                    <div class="pic">
 
-        <section class="list2_section dark_theme">
-            <ul class="list2 marker2">
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Фірма</strong>: VGR</p>
+                    </div>
+                    <p>Ефект коанда</p>
                 </li>
                 <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Потужність</strong>: 1000 Вт</p>
+                    <div class="pic">
+
+                    </div>
+                    <p>Функція іонізації</p>
                 </li>
                 <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Час нагрівання</strong>: 30 секунд</p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">3 температурні режими</strong></p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">2 швидкісні режими</strong></p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Обертовий на 360° шнур</strong></p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Довжина кабелю</strong>: 2 метри</p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Петля для підвішування</strong></p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Розмір</strong>: 22.5 х 4.5 х 4.5 см</p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Розмір упаковки</strong>: 33.5 х 17.6 х 8 см</p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Вага</strong>: 317 грамів</p>
-                </li>
-                <li>
-                    <p style="font-size: 20px;"><strong style="font-size: 20px;">Вага в упаковці</strong>: 948 грамів</p>
+                    <div class="pic">
+
+                    </div>
+                    <p>Для всіх типів волосся</p>
                 </li>
             </ul>
-        </section>
 
-        <section class="benefits_section">
-            <h2>Стайлер для волосся</h2>
-            <div class="benefits_list2" style="display: block;">
-                <div class="benefit_item">
-                    <img src="./images/styler-3.jpg">
-                    <h4></h4>
-                    <p></p>
-                </div>
-                <div class="benefit_item">
-                    <img src="./images/styler-4.jpg">
-                    <h4></h4>
-                    <p></p>
-                </div>
-                <a href="#telegram-form" class="button">
-                    <p>Замовити зараз</p>
-                </a>
+            <div class="order_form pat">
+                <div><a href="#telegram-form" class="button-m">Замовити зі знижкою</a></div>
             </div>
         </section>
+        <video width="100%" height="500" loop="" autoplay="" muted="" playsinline="">
+            <source src="media/gif1.mp4">
+        </video>
 
-        <section class="reviews1_section gray_theme">
-            <h2>ВІДГУКИ</h2>
-            <div class="reviews_list">
-                <div class="review_item">
-                    <img src="./images/styler-6.jpg" alt="Відгуки">
-                </div>
+        <section class="b1">
+            <div class="alert" style="font-size:22px;padding: 0px 0px 0px 60px;">
+                <p>☑ Ефект коанда</p><br>
+                <p>☑️ Негативно заряджені іони</p><br>
+                <p>☑️ Ергономічний дизайн</p><br>
+                <p>☑️ Без перегріву</p><br>
+                <p>☑️ Для всіх типів волосся</p>
             </div>
         </section>
-        <div style="padding-top: 25px;">
-            <h2 class="title tss" style="line-height: normal; font-size: 28px; color: steelblue;"><span
-                    style="color: crimson;">Як зробити</span><br> замовлення?</h2>
-        </div>
-        <div class="order_steps2 clearfix">
-            <div class="step_item">
-                <img src="./images/order_steps__step1_icon.png">
-                <div class="separator"></div>
-                <h4>Заявка</h4>
-                <p>Залишаєте заявку на сайті</p>
-            </div>
-            <div class="step_item">
-                <img src="./images/order_steps__step2_icon.png">
-                <div class="separator"></div>
-                <h4>Дзвінок</h4>
-                <p>Менеджер уточнює деталі замовлення</p>
-            </div>
-            <div class="step_item">
-                <img src="./images/order_steps__step3_icon.png">
-                <div class="separator"></div>
-                <h4>Відправка</h4>
-                <p>Доставляємо ваше замовлення протягом 1-3 днів</p>
-            </div>
-            <div class="step_item">
-                <img src="./images/order_steps__step4_icon.png">
-                <div class="separator"></div>
-                <h4>Отримання</h4>
-                <p>Ви сплачуєте замовлення при отриманні</p>
-            </div>
-        </div>
-        <section class="offer_section offer3 order" style="padding-bottom: 30px;">
-            <div class="main_title">
-                <h1>ФЕН-ЩІТКА 4 в 1</h1>
-                <p>найкращий помічник</p>
-            </div>
-            <div class="info_block">
-                <img src="./images/styler-1.jpg">
-            </div>
-            <div class="price_block clearfix">
-                <div class="price_item old">
-                    <div class="text">
-                        <p>Звичайна ціна:</p>
-                    </div>
-                    <div class="value"><span class="price_land_s2">
-                            <p style="font-size: 28px;">1799</p>
-                        </span> <span style="font-size: 28px;" class="price_land_curr">грн.</span></div>
-                </div>
-                <div class="price_item new">
-                    <div class="text">
-                        <p>Ціна сьогодні:</p>
-                    </div>
-                    <div class="value"><span style="font-size: 28px;" class="price_land_s1">1079</span> <span style="font-size: 28px;" class="price_land_curr">грн.</span>
-                    </div>
-                </div>
-            </div>
 
-            <form id="telegram-form">
-
-                <input type="text" class="field" name="name" placeholder="Введіть ваше ім'я" required/>
-
-                <input type="tel" class="field" name="phone" id="phone" placeholder="Ваш номер телефону" required/>
-
-                <button type="submit" class="button">Відправити замовлення</button>
-
-            </form>
-
-        </section>
-        <footer>
-            <div style="font-size:13px;text-align: center;">
-                    <a style="color:inherit;" href="#">Політика конфіденційності</a>
-                    <br>
-                    <a style="color:inherit;" href="#">Угода користувача</a>
-                    <br>
-                    <a style="color:inherit;" href="#">Умови гарантії та повернення</a>
-                    <br>
+        <section class="b1">
+            <h2 class="title black">Стайлер<span>для волосся</span></h2>
+            <div class="alert">
+                <p>Стайлер для волосся 5 в 1 допоможе легко створити красиві хвилі і локони з використанням спеціальних
+                    циліндричних насадок.
+                    <br><br>
+                    Робота приладу заснована на використанні аеродинамічного явища, що створює повітряні потоки, які в
+                    свою чергу притягують пасма і накручують їх на насадку, що використовується.
                 </p>
             </div>
+        </section>
+
+
+        <img src="images/p1.jpg" alt="">
+
+        <section class="b1">
+            <div class="alert">
+                <p>Укладання проводиться за допомогою лише повітря, без використання занадто високих температур,
+                    затискачів та інших допоміжних засобів для завивки.
+                    <br><br>
+                    Фен щітка для сушіння готує волосся до укладання.
+                    <br><br>
+                    Кругла щітка надає зачісці об'єму
+                    <br><br>
+                    Вона спрямовує вихрові потоки на локони і ущільнює їх
+                </p>
+            </div>
+        </section>
+
+        <img src="images/p2.jpg" alt="">
+
+        <section class="b1">
+            <div class="alert">
+                <p>Щетинки витягують пасма і надають їм форму у процесі висушування.
+                    <br><br>
+                    Насадка-випрямляч розгладжує волосся, робить його слухняним, гладкішим.
+                    <br><br>
+                    Наш стайлер для завивки може замінити: фен, плойку, щипці для укладання, щітку для випрямлення,
+                    прасування для волосся, електроробігуді
+                    <br><br>
+                    Професійний догляд у вас вдома забезпечить красу та здоров'я Вашого волосся
+                </p>
+            </div>
+        </section>
+
+        <img src="images/p3.jpg" alt="">
+        <section class="b4 pat">
+            <h2 class="title white"><span>Характеристики</span></h2>
+            <img src="images/chr.png" alt="" class="image">
+            <ul class="char-list">
+                <li><b>Матеріал:</b> <span>ABS пластик, полікарбонат</span></li>
+                <br>
+                <li><b>Джерело живлення:</b> <span>Від мережі 220 В</span></li>
+                <br>
+                <li><b>Максимальна потужність:</b> <span>1000 Вт</span></li>
+                <br>
+                <li><b>Нагрівальний елемент:</b> <span>інфрачервоний</span></li>
+                <br>
+                <li><b>Кількість насадок:</b> <span>5</span></li>
+                <br>
+                <li><b>Довжина шнура:</b> <span>200 см</span></li>
+                <br>
+                <li><b>Обертання:</b> <span>на 360 градусів</span></li>
+            </ul>
+            <div><a href="#telegram-form" class="button-m">Замовити зі знижкою</a></div>
+        </section>
+
+
+        <section class="reviews pat">
+            <h2 class="title white"><span>Відгуки</span> покупців</h2>
+            <div class="total">1209 позитивних відгуків</div>
+
+            <div class="item">
+                <div class="photo">
+                    <img src="images/rev1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="photo">
+                    <img src="images/rev2.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="item">
+                <div class="photo">
+                    <img src="images/rev3.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <style type="text/css">
+            .loading:after {
+                content: "";
+                display: inline-block;
+                width: 12px;
+                height: 12px;
+                margin-left: 5px;
+                border-radius: 50%;
+                border: 2px solid #000;
+                border-color: #000 transparent #000 transparent;
+                animation: spin 1s linear infinite;
+            }
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+
+        <div class="number-discount">
+            <h3 class="block-title">ЗАОЩАДЖУЙ ПРЯМО ЗАРАЗ!</h3>
+            <ol role="list" class="discount-list">
+                <li>2 шт = <strong>1148</strong> грн ( знижка -50грн )</li>
+                <li>3 шт = <strong>1697</strong> грн ( знижка -100грн )</li>
+            </ol>
+        </div>
+
+        <img width="960" height="207" img="" src="images/dostavka.jpg" alt="" class="attachment-full size-full">
+
+        <div
+            style="height: 100%; background-size: 100% 100%; color: #3c4152; text-align: center; font-size: 16px; padding-top: 2px; font-weight: 900;">
+            <span style="font-family: 'Proxima Nova', Arial, Helvetica, sans-serif; letter-spacing: 0px;">НА ДРУГИЙ СТАЙЛЕР ЗНИЖКА - 50 ГРН</span>
+        </div>
+
+        <section class="offer">
+            <div class="gallery">
+                <div class="swiper-container gallery-slider two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/im1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im3.jpg" alt=""></div>
+
+                    </div>
+                    <div class="swiper-button-prev two"></div>
+                    <div class="swiper-button-next two"></div>
+                </div>
+                <br>
+                <div class="price">
+                    <div class="old">
+                        <p>Звичайна ціна:</p>
+                        <div class="val"><span>1199</span><i>грн</i></div>
+                    </div>
+                    <div class="new">
+                        <p>Ціна сьогодні:</p>
+                        <div class="val"><span>699</span><i>грн</i></div>
+                    </div>
+                </div>
+                <div class="swiper-container gallery-thumbs two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/im1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im2.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="images/im3.jpg" alt=""></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="order_form pat">
+                <div class="form-txt">
+                    <h4>Залишіть заявку</h4>
+                    <p>та отримайте консультацію</p>
+
+                </div>
+
+                <form class="m1-form" id="telegram-form">
+
+                    <select name="select" class="field" required="">
+                        <option value="Не обрано" disabled="" selected="" hidden="">▼ Обрати кiлькiсть (шт.)</option>
+                        <option value="1 шт = 699 грн">1 шт = 699 грн</option>
+                        <option value="2 шт = 1148 грн ( знижка -50грн )">2 шт = 1148 грн ( знижка -50грн )</option>
+                        <option value="3 шт = 1697 грн ( знижка -100грн )">3 шт = 1697 грн ( знижка -100грн )</option>
+                    </select>
+
+                    <input class="field" type="text" name="name" placeholder="Введіть Ваше ім'я" required="">
+                    <input class="field" id="phone" type="tel" name="phone" placeholder="Введіть Ваш телефон" required="" autocomplete="on">
+                    <button class="button-m" type="submit">Замовити зараз</button>
+                </form>
+
+            </div>
+
+        </section>
+        <img width="960" height="207" img="" src="images/002.jpeg" alt="" class="attachment-full size-full">
+
+        <footer>
+            <div style="text-align: center; margin: 10px auto; display: block; font-size: 14px; line-height: 26px;">
+                <br>
+                <strong> "Офіційний дистриб'ютор на території України"</strong>
+
+                <a href="#" target="_blank" style="cursor: pointer;color: gold;">
+                    Політика конфіденційності </a><br>
+                Всі права захищено © 2023
+            </div>
         </footer>
+
+        <footer>
+            <div style="text-align: center; margin: 5px auto; display: block; font-size: 5px; line-height: 5px;"><img
+                    src="images/001.jpeg.png" alt=""></div>
+        </footer>
+
     </div>
 
+
+    <!-- Swipper slider -->
+    <script>
+        $(window).on("load", function () {
+
+            var slider = new Swiper('.gallery-slider.one', {
+                slidesPerView: 1,
+                centeredSlides: true,
+                loop: true,
+                loopedSlides: 6,
+                navigation: {
+                    nextEl: '.swiper-button-next.one',
+                    prevEl: '.swiper-button-prev.one',
+                },
+            });
+
+
+            var thumbs = new Swiper('.gallery-thumbs.one', {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                centeredSlides: true,
+                loop: true,
+                slideToClickedSlide: true,
+            });
+
+            slider.controller.control = thumbs;
+            thumbs.controller.control = slider;
+            var slider2 = new Swiper('.gallery-slider.two', {
+                slidesPerView: 1,
+                centeredSlides: true,
+                loop: true,
+                loopedSlides: 6,
+                navigation: {
+                    nextEl: '.swiper-button-next.two',
+                    prevEl: '.swiper-button-prev.two',
+                },
+            });
+
+
+            var thumbs2 = new Swiper('.gallery-thumbs.two', {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                centeredSlides: true,
+                loop: true,
+                slideToClickedSlide: true,
+            });
+
+            slider2.controller.control = thumbs2;
+            thumbs2.controller.control = slider2;
+        });
+    </script>
+
+    <!-- Запрет на открытие инструментов разработчика -->
+    <script type="text/javascript">
+        document.addEventListener('keydown', function (event) {
+            if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'I') {
+                event.preventDefault();
+            }
+
+            if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'J') {
+                event.preventDefault();
+            }
+
+            if ((event.ctrlKey || event.metaKey) && event.shiftKey && event.key === 'C') {
+                event.preventDefault();
+            }
+
+            if ((event.ctrlKey || event.metaKey) && event.key === 'S') {
+                event.preventDefault();
+            }
+
+            if (event.key === 'F12' && event.code === 'F12') {
+                event.preventDefault();
+            }
+        });
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/phoneMask.js" defer></script>
     <script src="./js/send-form.js" defer></script>
+    <script src="./js/maskedinput.js"></script>
+    <script async="" src="./js/swiper-bundle.min.js"></script>
 
 </body>
 
