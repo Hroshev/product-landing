@@ -1,7 +1,6 @@
 <?php
 $tg_bot_token = "";
 $chat_id = "";
-
 $text = '';
 
 foreach ($_POST as $key => $val) {
