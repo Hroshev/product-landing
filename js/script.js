@@ -1,15 +1,63 @@
-/* Отправка формы */
-$(".order-form").on("submit",function(event){event.stopPropagation();event.preventDefault();let form=this,submit=$(".submit",form),data=new FormData();$(".submit",form).val("Відправлення...");$("input,textarea",form).attr("disabled","");let nameValue=$('[name="name"]',form).val();let phoneValue=$('[name="phone"]',form).val();let emailValue=$('[name="email"]',form).val();let selectValue=$('[name="select"]',form).val();if(nameValue){data.append("Ім`я",nameValue)}
-if(phoneValue){data.append("Телефон",phoneValue)}
-if(emailValue){data.append("Email",emailValue)}
-if(selectValue){data.append("Пропозиція",selectValue)}
-data.append("Товар",window.location.href);$.ajax({url:"telegram.php",type:"POST",data:data,cache:!1,dataType:"json",processData:!1,contentType:!1,xhr:function(){let myXhr=$.ajaxSettings.xhr();if(myXhr.upload){myXhr.upload.addEventListener("progress",function(e){if(e.lengthComputable){let percentage=(e.loaded/e.total)*100;percentage=percentage.toFixed(0);$(".submit",form).html(percentage+"%")}},!1)}
-return myXhr},error:function(jqXHR,textStatus){},complete:function(){window.location.href="/thank-you-page";form.reset()},});return!1});$(document).on("submit",".dynamic-form",function(event){})
+$(document).ready(function() {
+	/* timer */
+	function update() {
+		var Now = new Date(), Finish = new Date();
+		Finish.setHours( 23);
+		Finish.setMinutes( 59);
+		Finish.setSeconds( 59);
+		if( Now.getHours() === 23  &&  Now.getMinutes() === 59  &&  Now.getSeconds === 59) {
+			Finish.setDate( Finish.getDate() + 1);
+		}
+		var sec = Math.floor( ( Finish.getTime() - Now.getTime()) / 1000);
+		var hrs = Math.floor( sec / 3600);
+		sec -= hrs * 3600;
+		var min = Math.floor( sec / 60);
+		sec -= min * 60;
+		$(".timer .hours").html( pad(hrs));
+		$(".timer .minutes").html( pad(min));
+		$(".timer .seconds").html( pad(sec));
+		setTimeout( update, 200);
+	}
+	function pad(s) {
+		s = ("00"+s).substr(-2);
+		return "<span>" + s[0] + "</span><span>" + s[1] + "</span>";
+	}
+	update();
 
-/* Плавная прокрутка */
-$(document).ready(function(){$('a[href^="#order-form"]').click(function(){var t=$(this).attr("href"),e=$(t).offset().top;return(jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop:e},1000),!1)})})
+	/* Curent date */
+	const comment = document.querySelectorAll("#currentDate");
+	function getCurrentDate(a) {
+		var currentDate = new Date();
+		var day = currentDate.getDate() - a;
+		var month = currentDate.getMonth() + 1;
+		var year = currentDate.getFullYear();
 
-/* Devtools */
-document.addEventListener("keydown",(event)=>{const isCtrlShift=event.ctrlKey||(event.metaKey&&event.shiftKey);if(isCtrlShift&&["I","J","C"].includes(event.key)){event.preventDefault()}
-if((isCtrlShift||event.ctrlKey||event.metaKey)&&event.key==="S"){event.preventDefault()}
-if(event.key==="F12"&&event.code==="F12"){event.preventDefault()}})
+		if (day < 10) {
+			day = "0" + day;
+		}
+		if (month < 10) {
+			month = "0" + month;
+		}
+
+		var formattedDate = day + "." + month + "." + year;
+		return formattedDate;
+	}
+	comment.forEach((item, idx) => {
+		if (idx === 0) {
+			item.innerHTML = getCurrentDate(0);
+		}
+		if (idx === 1) {
+			item.innerHTML = getCurrentDate(1);
+		}
+		if (idx === 2) {
+			item.innerHTML = getCurrentDate(1);
+		}
+		if (idx === 3) {
+			item.innerHTML = getCurrentDate(2);
+		}
+		if (idx === 4) {
+			item.innerHTML = getCurrentDate(2);
+		}
+	});
+
+});
