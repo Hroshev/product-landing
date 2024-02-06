@@ -1,15 +1,10 @@
 # Установка кодировки UTF-8
 AddDefaultCharset UTF-8
 
-# Переадресация с HTTP на HTTPS
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 # Удаление расширения .html из URL
+RewriteEngine on
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
-
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
@@ -18,18 +13,8 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
     Options -Indexes
 </IfModule>
 
-# Скрытие версии WordPress
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule ^readme\.html$ - [L]
-    RewriteRule ^license\.txt$ - [L]
-    RewriteRule ^xmlrpc\.php$ - [L]
-    RewriteRule ^wp-includes/$ - [F]
-    RewriteRule ^wp-admin/$ - [F]
-</IfModule>
-
-# Отключение просмотра каталогов
-Options All -Indexes
+# Защита от просмотра содержимого директории
+Options -Indexes
 
 # Отключение отображения версии Apache в заголовках
 Header unset X-Powered-By
