@@ -1,7 +1,6 @@
 $(document).ready(function() {
-	
-	/* timer */
 
+	/* timer */
 	function update() {
 		var Now = new Date(), Finish = new Date();
 		Finish.setHours( 23);
@@ -26,17 +25,17 @@ $(document).ready(function() {
 	}
 	update();
 
-});
-
-$(window).on("load", function(){
+	/* sliders */
 	$(".owl-carousel").owlCarousel({
 		items: 1,
 		loop: true,
-		autoHeight: true,
 		smartSpeed: 300,
 		mouseDrag: false,
 		pullDrag: false,
+		dots: false,
 		nav: true,
-		navText: ""
+		navText: "",
+		autoplay: true, 
+		autoplayTimeout: 4000,
 	});
 });
