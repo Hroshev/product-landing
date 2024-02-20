@@ -107,8 +107,7 @@ h2.title span {
 /* separator */
 
 .separator {
-	width: 62px;
-	height: 5px;
+	height: 6px;
 	background: url("../images/separator_red.png") center no-repeat;
 }
 
@@ -1789,6 +1788,14 @@ section .image {
 	margin: 0 60px 30px 0;
 }
 
+.review_item-img {
+	margin-bottom: 10px;
+	width: 100%;
+	max-height: 370px;
+	border-radius: 4px;
+	object-fit: cover;
+}
+
 .reviews1_section .review_item {
 	margin: 0 0 30px;
 	padding: 25px;
@@ -2061,29 +2068,29 @@ section .image {
 }
 
 .order_info .info_item {
-	float: left;
-	margin: 0 2px 2px 0;
+
+	margin: 0 auto;
 	padding: 25px 15px 0 25px;
-	width: 239px;
-	height: 270px;
-	-webkit-box-shadow: 0 0 0 1px #ebebeb;
+	width: 380px;
+	height: 220px;
+	/* -webkit-box-shadow: 0 0 0 1px #ebebeb;
 	-moz-box-shadow: 0 0 0 1px #ebebeb;
-	box-shadow: 0 0 0 1px #ebebeb;
+	box-shadow: 0 0 0 1px #ebebeb; */
 	text-align: center;
 }
 .order_info .info_item img {
 	margin: 0 auto;
 }
 
-.order_info .info_item:nth-child(even) {
-	margin: 0 0 2px;
+.order_info h4 {
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 700;
 }
 
-.order_info .info_item:nth-last-child(2) {
-	margin-bottom: 0;
+.order_info p {
+	font-size: 16px;
 }
-
-
 
 .order_info .info_item .icon {
 	display: block;
