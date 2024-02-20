@@ -257,11 +257,20 @@
       </div>
 
       <form id="order-form" class="main-order-form m1-form order-form">
+
+        <select class="select field" name="select">
+          <option value="1шт." selected disabled hidden>Оберіть кількість ▼</option>
+          <option value="1шт.">1шт. - 1399грн.</option>
+          <option value="2шт.">2шт. - 2798грн</option>
+          <option value="3шт.">3шт. - 4197грн</option>
+        </select>
+
         <input class="field" name="name" type="text" placeholder="Введіть ім'я" required="">
-        <br>
+        
         <input class="field" name="phone" type="tel" placeholder="Введіть телефон" required="">
-        <br>
+
         <button class="button">Зробити замовлення</button>
+
       </form>
 
       <div class="products_count">Залишилось <b class="packages-count">16</b> шт. по акції</div>

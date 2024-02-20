@@ -676,6 +676,16 @@ section .image {
 	color: #777;
 }
 
+.select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.select option {
+	padding: 40px !important;
+} 
+
 .offer_section #nam {
 	background: #ebebeb url("../images/offer__name_icon.png") 22px center no-repeat;
 }
@@ -2073,9 +2083,6 @@ section .image {
 	padding: 25px 15px 0 25px;
 	width: 380px;
 	height: 220px;
-	/* -webkit-box-shadow: 0 0 0 1px #ebebeb;
-	-moz-box-shadow: 0 0 0 1px #ebebeb;
-	box-shadow: 0 0 0 1px #ebebeb; */
 	text-align: center;
 }
 .order_info .info_item img {
